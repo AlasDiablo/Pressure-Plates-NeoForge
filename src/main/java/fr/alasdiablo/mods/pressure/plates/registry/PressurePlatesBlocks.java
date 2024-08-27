@@ -4,8 +4,13 @@ import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.PressurePlatesRegistries;
 import fr.alasdiablo.mods.pressure.plates.block.MossyCobblestonePressurePlateBlock;
 import fr.alasdiablo.mods.pressure.plates.block.ObsidianPressurePlateBlock;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -41,6 +46,31 @@ public class PressurePlatesBlocks {
             () -> new MossyCobblestonePressurePlateBlock(true),
             PressurePlatesRegistries.SILENCE_MOSSY_COBBLESTONE_PRESSURE_PLATE
     );
+
+    public static void onCreativeModeTabEvent(@NotNull BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+            event.insertAfter(
+                    new ItemStack(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE),
+                    new ItemStack(OBSIDIAN_PRESSURE_PLATE),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    new ItemStack(OBSIDIAN_PRESSURE_PLATE),
+                    new ItemStack(SILENCE_OBSIDIAN_PRESSURE_PLATE),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    new ItemStack(SILENCE_OBSIDIAN_PRESSURE_PLATE),
+                    new ItemStack(MOSSY_COBBLESTONE_PRESSURE_PLATE),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    new ItemStack(MOSSY_COBBLESTONE_PRESSURE_PLATE),
+                    new ItemStack(SILENCE_MOSSY_COBBLESTONE_PRESSURE_PLATE),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+        }
+    }
 
     public static void init(IEventBus bus) {
         BLOCKS.register(bus);

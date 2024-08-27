@@ -12,13 +12,13 @@ import org.jetbrains.annotations.NotNull;
 public class ObsidianPressurePlateBlock extends MuteablePressurePlateBlock {
     public ObsidianPressurePlateBlock(boolean muted) {
         super(BlockBehaviour.Properties.of()
-                .mapColor(MapColor.COLOR_BLACK)
-                .forceSolidOn()
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .noCollission()
-                .strength(5.0f, 1200.0f)
-                .pushReaction(PushReaction.DESTROY), muted);
+                      .mapColor(MapColor.COLOR_BLACK)
+                      .forceSolidOn()
+                      .instrument(NoteBlockInstrument.BASEDRUM)
+                      .requiresCorrectToolForDrops()
+                      .noCollission()
+                      .strength(5.0f, 1200.0f)
+                      .pushReaction(PushReaction.DESTROY), muted);
     }
 
     @Override

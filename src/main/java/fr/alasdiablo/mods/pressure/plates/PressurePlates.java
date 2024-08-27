@@ -1,10 +1,13 @@
 package fr.alasdiablo.mods.pressure.plates;
 
 import com.mojang.logging.LogUtils;
+import fr.alasdiablo.mods.pressure.plates.data.BlockStatesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.ItemModelsProvider;
 import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -24,16 +27,23 @@ public class PressurePlates {
         PressurePlatesBlocks.init(modEventBus);
 
         modEventBus.addListener(this::gatherData);
+        modEventBus.addListener(PressurePlatesBlocks::onCreativeModeTabEvent);
     }
 
     private void gatherData(@NotNull GatherDataEvent event) {
         PressurePlates.LOGGER.debug("Start data generator");
-        final DataGenerator generator = event.getGenerator();
-        final PackOutput output = generator.getPackOutput();
-        final CompletableFuture<HolderLookup.Provider> lookup = event.getLookupProvider();
-        final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        final DataGenerator                            generator          = event.getGenerator();
+        final PackOutput                               output             = generator.getPackOutput();
+        final CompletableFuture<HolderLookup.Provider> lookup             = event.getLookupProvider();
+        final ExistingFileHelper                       existingFileHelper = event.getExistingFileHelper();
 
         PressurePlates.LOGGER.debug("Add Client Provider");
+
+        PressurePlates.LOGGER.debug("Add Block State and Block Model Provider");
+        generator.addProvider(event.includeClient(), new BlockStatesProvider(output, existingFileHelper));
+
+        PressurePlates.LOGGER.debug("Add Item Model Provider");
+        generator.addProvider(event.includeClient(), new ItemModelsProvider(output, existingFileHelper));
 
         PressurePlates.LOGGER.debug("Add Server Provider");
     }

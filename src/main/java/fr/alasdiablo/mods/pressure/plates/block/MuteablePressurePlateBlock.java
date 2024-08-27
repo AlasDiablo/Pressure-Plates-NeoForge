@@ -31,9 +31,9 @@ public abstract class MuteablePressurePlateBlock extends PressurePlateBlock {
             @NotNull BlockState state,
             int currentSignal
     ) {
-        int signalStrength = this.getSignalStrength(level, pos);
+        int     signalStrength     = this.getSignalStrength(level, pos);
         boolean isOutputtingSignal = currentSignal > 0;
-        boolean needOutputSignal = signalStrength > 0;
+        boolean needOutputSignal   = signalStrength > 0;
 
         if (currentSignal != signalStrength) {
             BlockState blockstate = this.setSignalForState(state, signalStrength);

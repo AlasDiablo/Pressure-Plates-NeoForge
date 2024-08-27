@@ -14,13 +14,13 @@ import org.jetbrains.annotations.NotNull;
 public class MossyCobblestonePressurePlateBlock extends MuteablePressurePlateBlock {
     public MossyCobblestonePressurePlateBlock(boolean muted) {
         super(BlockBehaviour.Properties.of()
-                .mapColor(MapColor.STONE)
-                .forceSolidOn()
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .noCollission()
-                .strength(2.0F, 6.0F)
-                .pushReaction(PushReaction.DESTROY), muted);
+                      .mapColor(MapColor.STONE)
+                      .forceSolidOn()
+                      .instrument(NoteBlockInstrument.BASEDRUM)
+                      .requiresCorrectToolForDrops()
+                      .noCollission()
+                      .strength(2.0F, 6.0F)
+                      .pushReaction(PushReaction.DESTROY), muted);
     }
 
     @Override
