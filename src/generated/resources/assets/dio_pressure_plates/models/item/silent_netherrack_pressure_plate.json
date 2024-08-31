@@ -1,0 +1,6 @@
+{
+  "parent": "dio_pressure_plates:block/silent_pressure_plate_up",
+  "textures": {
+    "texture": "minecraft:block/netherrack"
+  }
+}

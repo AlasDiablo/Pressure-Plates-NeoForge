@@ -12,7 +12,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public abstract class MuteablePressurePlateBlock extends PressurePlateBlock {
+public class MuteablePressurePlateBlock extends PressurePlateBlock {
     private final boolean muted;
 
     public MuteablePressurePlateBlock(BlockBehaviour.Properties properties, boolean muted) {
@@ -20,8 +20,10 @@ public abstract class MuteablePressurePlateBlock extends PressurePlateBlock {
         this.muted = muted;
     }
 
-    @Override
-    protected abstract int getSignalStrength(@NotNull Level level, @NotNull BlockPos pos);
+    public MuteablePressurePlateBlock(BlockSetType type, BlockBehaviour.Properties properties) {
+        super(type, properties);
+        this.muted = true;
+    }
 
     @Override
     public void checkPressed(

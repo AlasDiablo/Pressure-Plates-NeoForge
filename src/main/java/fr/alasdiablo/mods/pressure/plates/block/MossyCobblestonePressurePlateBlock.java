@@ -5,7 +5,6 @@ import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -13,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class MossyCobblestonePressurePlateBlock extends MuteablePressurePlateBlock {
     public MossyCobblestonePressurePlateBlock(boolean muted) {
-        super(BlockBehaviour.Properties.of()
+        super(Properties.of()
                       .mapColor(MapColor.STONE)
                       .forceSolidOn()
                       .instrument(NoteBlockInstrument.BASEDRUM)

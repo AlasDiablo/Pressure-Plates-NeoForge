@@ -1,0 +1,21 @@
+{
+  "block.dio_pressure_plates.dirt_pressure_plate": "Plaque de pression en terre",
+  "block.dio_pressure_plates.mossy_cobblestone_pressure_plate": "Plaque de pression en pierres moussues",
+  "block.dio_pressure_plates.netherrack_pressure_plate": "Plaque de pression en netherrack",
+  "block.dio_pressure_plates.obsidian_pressure_plate": "Plaque de pression en obsidienne",
+  "block.dio_pressure_plates.silent_acacia_pressure_plate": "Silent Acacia Pressure plate",
+  "block.dio_pressure_plates.silent_bamboo_pressure_plate": "Silent Bamboo Pressure plate",
+  "block.dio_pressure_plates.silent_birch_pressure_plate": "Silent Birch Pressure plate",
+  "block.dio_pressure_plates.silent_cherry_pressure_plate": "Silent Cherry Pressure plate",
+  "block.dio_pressure_plates.silent_crimson_pressure_plate": "Silent Crimson Pressure plate",
+  "block.dio_pressure_plates.silent_dark_oak_pressure_plate": "Silent Dark Oak Pressure plate",
+  "block.dio_pressure_plates.silent_dirt_pressure_plate": "Plaque de pression en terre silencieuse",
+  "block.dio_pressure_plates.silent_jungle_pressure_plate": "Silent Jungle Pressure plate",
+  "block.dio_pressure_plates.silent_mangrove_pressure_plate": "Silent Mangrove Pressure plate",
+  "block.dio_pressure_plates.silent_mossy_cobblestone_pressure_plate": "Plaque de pression en pierres moussues silencieuse",
+  "block.dio_pressure_plates.silent_netherrack_pressure_plate": "Plaque de pression en netherrack silencieuse",
+  "block.dio_pressure_plates.silent_oak_pressure_plate": "Silent Oak Pressure plate",
+  "block.dio_pressure_plates.silent_obsidian_pressure_plate": "Plaque de pression en obsidienne silencieuse",
+  "block.dio_pressure_plates.silent_spruce_pressure_plate": "Silent Spruce Pressure plate",
+  "block.dio_pressure_plates.silent_warped_pressure_plate": "Silent Warped Pressure plate"
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "powered=false": [
+      {
+        "model": "dio_pressure_plates:block/silent_oak_pressure_plate"
+      },
+      {
+        "model": "dio_pressure_plates:block/silent_oak_pressure_plate"
+      }
+    ],
+    "powered=true": [
+      {
+        "model": "dio_pressure_plates:block/silent_oak_pressure_plate_down"
+      },
+      {
+        "model": "dio_pressure_plates:block/silent_oak_pressure_plate_down"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "P",
+    "W"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dio_pressure_plates:silent_mangrove_pressure_plate"
+  }
+}

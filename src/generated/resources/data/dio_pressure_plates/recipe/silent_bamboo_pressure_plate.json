@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "P",
+    "W"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dio_pressure_plates:silent_bamboo_pressure_plate"
+  }
+}

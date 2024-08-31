@@ -1,0 +1,6 @@
+{
+  "parent": "dio_pressure_plates:block/silent_pressure_plate_down",
+  "textures": {
+    "texture": "minecraft:block/stone"
+  }
+}
