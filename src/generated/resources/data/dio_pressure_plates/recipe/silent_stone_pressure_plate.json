@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "minecraft:stone"
+      "item": "minecraft:stone_pressure_plate"
     },
     "W": {
       "tag": "minecraft:wool"

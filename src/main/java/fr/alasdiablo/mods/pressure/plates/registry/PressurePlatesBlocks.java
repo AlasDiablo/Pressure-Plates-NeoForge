@@ -111,12 +111,13 @@ public class PressurePlatesBlocks {
             PressurePlatesRegistries.SILENT_WARPED_PRESSURE_PLATE
     );
 
-    public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_STONE_PRESSURE_PLATE  = register(
+    public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_STONE_PRESSURE_PLATE               = register(
             () -> new MuteablePressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)),
             PressurePlatesRegistries.SILENT_STONE_PRESSURE_PLATE
     );
-    public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE   = register(
-            () -> new MuteablePressurePlateBlock(BlockSetType.POLISHED_BLACKSTONE, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE)),
+    public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE = register(
+            () -> new MuteablePressurePlateBlock(
+                    BlockSetType.POLISHED_BLACKSTONE, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE)),
             PressurePlatesRegistries.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE
     );
 

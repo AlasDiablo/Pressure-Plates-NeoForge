@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "minecraft:crimson_planks"
+      "item": "minecraft:crimson_pressure_plate"
     },
     "W": {
       "tag": "minecraft:wool"

@@ -2,7 +2,6 @@ package fr.alasdiablo.mods.pressure.plates.data;
 
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.PressurePlatesRegistries;
-import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;

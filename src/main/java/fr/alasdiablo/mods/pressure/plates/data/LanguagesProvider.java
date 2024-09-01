@@ -33,6 +33,11 @@ public class LanguagesProvider {
                 this.add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.get(), "Dirt Pressure plate");
                 this.add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.get(), "Silent Dirt Pressure plate");
 
+                this.add("block.dio_pressure_plates.obsidian_pressure_plate.hover_text", "Only detect players");
+                this.add("block.dio_pressure_plates.mossy_cobblestone_pressure_plate.hover_text", "Only detect living entities");
+                this.add("block.dio_pressure_plates.netherrack_pressure_plate.hover_text", "Only detect enemy entities");
+                this.add("block.dio_pressure_plates.dirt_pressure_plate.hover_text", "Only detect passive entities");
+
                 this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Silent Oak Pressure plate");
                 this.add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get(), "Silent Spruce Pressure plate");
                 this.add(PressurePlatesBlocks.SILENT_BIRCH_PRESSURE_PLATE.get(), "Silent Birch Pressure plate");
@@ -101,17 +106,25 @@ public class LanguagesProvider {
                 this.add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.get(), "Plaque de pression en terre");
                 this.add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.get(), "Plaque de pression en terre silencieuse");
 
-                this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Silent Oak Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get(), "Silent Spruce Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_BIRCH_PRESSURE_PLATE.get(), "Silent Birch Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_JUNGLE_PRESSURE_PLATE.get(), "Silent Jungle Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_ACACIA_PRESSURE_PLATE.get(), "Silent Acacia Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_DARK_OAK_PRESSURE_PLATE.get(), "Silent Dark Oak Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_MANGROVE_PRESSURE_PLATE.get(), "Silent Mangrove Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_CHERRY_PRESSURE_PLATE.get(), "Silent Cherry Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_BAMBOO_PRESSURE_PLATE.get(), "Silent Bamboo Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_CRIMSON_PRESSURE_PLATE.get(), "Silent Crimson Pressure plate");
-                this.add(PressurePlatesBlocks.SILENT_WARPED_PRESSURE_PLATE.get(), "Silent Warped Pressure plate");
+                this.add("block.dio_pressure_plates.obsidian_pressure_plate.hover_text", "Détecter uniquement les joueurs");
+                this.add("block.dio_pressure_plates.mossy_cobblestone_pressure_plate.hover_text", "Détecter uniquement les entités vivantes");
+                this.add("block.dio_pressure_plates.netherrack_pressure_plate.hover_text", "Détecter uniquement les entités ennemies");
+                this.add("block.dio_pressure_plates.dirt_pressure_plate.hover_text", "Détecter uniquement les entités passives");
+
+                this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Plaque de pression en chêne silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get(), "Plaque de pression en sapin silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_BIRCH_PRESSURE_PLATE.get(), "Plaque de pression en bouleau silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_JUNGLE_PRESSURE_PLATE.get(), "Plaque de pression en acajou silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_ACACIA_PRESSURE_PLATE.get(), "Plaque de pression en acacia silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_DARK_OAK_PRESSURE_PLATE.get(), "Plaque de pression en chêne noir silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_MANGROVE_PRESSURE_PLATE.get(), "Plaque de pression en palétuvier silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_CHERRY_PRESSURE_PLATE.get(), "Plaque de pression en cerisier silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_BAMBOO_PRESSURE_PLATE.get(), "Plaque de pression en bambou silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_CRIMSON_PRESSURE_PLATE.get(), "Plaque de pression en carmin silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_WARPED_PRESSURE_PLATE.get(), "Plaque de pression en biscornue silencieuse");
+
+                this.add(PressurePlatesBlocks.SILENT_STONE_PRESSURE_PLATE.get(), "Plaque de pression en pierre silencieuse");
+                this.add(PressurePlatesBlocks.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE.get(), "Plaque de pression en pierre noire silencieuse");
             }
         }
 

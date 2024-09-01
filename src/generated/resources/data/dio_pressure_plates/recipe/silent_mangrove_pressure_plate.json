@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "minecraft:mangrove_planks"
+      "item": "minecraft:mangrove_pressure_plate"
     },
     "W": {
       "tag": "minecraft:wool"

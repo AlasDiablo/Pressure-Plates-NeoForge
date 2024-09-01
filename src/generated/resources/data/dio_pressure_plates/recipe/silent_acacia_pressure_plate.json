@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "minecraft:acacia_planks"
+      "item": "minecraft:acacia_pressure_plate"
     },
     "W": {
       "tag": "minecraft:wool"

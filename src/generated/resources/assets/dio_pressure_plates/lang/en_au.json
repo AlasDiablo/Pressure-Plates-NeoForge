@@ -1,8 +1,12 @@
 {
   "block.dio_pressure_plates.dirt_pressure_plate": "Dirt Pressure plate",
+  "block.dio_pressure_plates.dirt_pressure_plate.hover_text": "Only detect passive entities",
   "block.dio_pressure_plates.mossy_cobblestone_pressure_plate": "Mossy Cobblestone Pressure plate",
+  "block.dio_pressure_plates.mossy_cobblestone_pressure_plate.hover_text": "Only detect living entities",
   "block.dio_pressure_plates.netherrack_pressure_plate": "Netherrack Pressure plate",
+  "block.dio_pressure_plates.netherrack_pressure_plate.hover_text": "Only detect enemy entities",
   "block.dio_pressure_plates.obsidian_pressure_plate": "Obsidian Pressure plate",
+  "block.dio_pressure_plates.obsidian_pressure_plate.hover_text": "Only detect players",
   "block.dio_pressure_plates.silent_acacia_pressure_plate": "Silent Acacia Pressure plate",
   "block.dio_pressure_plates.silent_bamboo_pressure_plate": "Silent Bamboo Pressure plate",
   "block.dio_pressure_plates.silent_birch_pressure_plate": "Silent Birch Pressure plate",

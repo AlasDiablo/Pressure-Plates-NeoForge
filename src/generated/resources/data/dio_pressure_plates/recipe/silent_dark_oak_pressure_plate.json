@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "minecraft:dark_oak_planks"
+      "item": "minecraft:dark_oak_pressure_plate"
     },
     "W": {
       "tag": "minecraft:wool"
