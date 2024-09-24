@@ -1,4 +1,4 @@
-package fr.alasdiablo.mods.pressure.plates.data;
+package fr.alasdiablo.mods.pressure.plates.data.model;
 
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.PressurePlatesRegistries;
@@ -82,11 +82,6 @@ public class BlockStatesProvider extends BlockStateProvider {
                 PressurePlatesBlocks.SILENT_ACACIA_PRESSURE_PLATE.get(),
                 PressurePlatesRegistries.SILENT_ACACIA_PRESSURE_PLATE,
                 ResourceLocation.withDefaultNamespace("block/acacia_planks")
-        );
-        this.silentPressurePlateBlock(
-                PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(),
-                PressurePlatesRegistries.SILENT_OAK_PRESSURE_PLATE,
-                ResourceLocation.withDefaultNamespace("block/oak_planks")
         );
         this.silentPressurePlateBlock(
                 PressurePlatesBlocks.SILENT_DARK_OAK_PRESSURE_PLATE.get(),

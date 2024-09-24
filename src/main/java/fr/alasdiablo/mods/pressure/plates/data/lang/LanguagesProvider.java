@@ -1,4 +1,4 @@
-package fr.alasdiablo.mods.pressure.plates.data;
+package fr.alasdiablo.mods.pressure.plates.data.lang;
 
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;

@@ -1,10 +1,12 @@
 package fr.alasdiablo.mods.pressure.plates;
 
 import com.mojang.logging.LogUtils;
-import fr.alasdiablo.mods.pressure.plates.data.BlockStatesProvider;
-import fr.alasdiablo.mods.pressure.plates.data.ItemModelsProvider;
-import fr.alasdiablo.mods.pressure.plates.data.LanguagesProvider;
-import fr.alasdiablo.mods.pressure.plates.data.RecipesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.lang.LanguagesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.loot.LootsTablesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.model.BlockStatesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.model.ItemModelsProvider;
+import fr.alasdiablo.mods.pressure.plates.data.recipe.RecipesProvider;
+import fr.alasdiablo.mods.pressure.plates.data.tag.BlocksTagsProvider;
 import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -57,6 +59,12 @@ public class PressurePlates {
         generator.addProvider(event.includeClient(), new LanguagesProvider.English.UnitedStates(output));
 
         PressurePlates.LOGGER.debug("Add Server Provider");
+
+        PressurePlates.LOGGER.debug("Add LootTable Provider");
+        generator.addProvider(event.includeServer(), new LootsTablesProvider(output, lookup));
+
+        PressurePlates.LOGGER.debug("Add Tags Provider");
+        generator.addProvider(event.includeServer(), new BlocksTagsProvider(output, lookup, existingFileHelper));
 
         PressurePlates.LOGGER.debug("Add Recipes Provider");
         generator.addProvider(event.includeServer(), new RecipesProvider(output, lookup));

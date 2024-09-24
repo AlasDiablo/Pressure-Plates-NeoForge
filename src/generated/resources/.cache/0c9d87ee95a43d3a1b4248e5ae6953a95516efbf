@@ -1,0 +1,4 @@
+// 1.21.1	2024-09-24T13:30:19.6844734	Tags for minecraft:block mod id dio_pressure_plates
+c4ac3ef0c0817a11d64f0450f4826d12b5c539b6 data/minecraft/tags/block/mineable/axe.json
+57a0a350b7bc8168ce59e8515dae018a591f112a data/minecraft/tags/block/mineable/pickaxe.json
+a84c51484f0513f9c75a04af3cf46eda43e80bff data/minecraft/tags/block/mineable/shovel.json

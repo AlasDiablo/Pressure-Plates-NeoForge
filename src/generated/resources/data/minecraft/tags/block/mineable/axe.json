@@ -1,0 +1,14 @@
+{
+  "values": [
+    "dio_pressure_plates:silent_oak_pressure_plate",
+    "dio_pressure_plates:silent_spruce_pressure_plate",
+    "dio_pressure_plates:silent_birch_pressure_plate",
+    "dio_pressure_plates:silent_jungle_pressure_plate",
+    "dio_pressure_plates:silent_acacia_pressure_plate",
+    "dio_pressure_plates:silent_dark_oak_pressure_plate",
+    "dio_pressure_plates:silent_mangrove_pressure_plate",
+    "dio_pressure_plates:silent_cherry_pressure_plate",
+    "dio_pressure_plates:silent_crimson_pressure_plate",
+    "dio_pressure_plates:silent_warped_pressure_plate"
+  ]
+}

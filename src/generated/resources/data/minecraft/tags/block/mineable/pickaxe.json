@@ -1,0 +1,12 @@
+{
+  "values": [
+    "dio_pressure_plates:obsidian_pressure_plate",
+    "dio_pressure_plates:silent_obsidian_pressure_plate",
+    "dio_pressure_plates:mossy_cobblestone_pressure_plate",
+    "dio_pressure_plates:silent_mossy_cobblestone_pressure_plate",
+    "dio_pressure_plates:netherrack_pressure_plate",
+    "dio_pressure_plates:silent_netherrack_pressure_plate",
+    "dio_pressure_plates:silent_stone_pressure_plate",
+    "dio_pressure_plates:silent_polished_blackstone_pressure_plate"
+  ]
+}
