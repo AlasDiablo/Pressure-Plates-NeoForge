@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "P": {
-      "item": "minecraft:mossy_cobblestone"
-    },
-    "W": {
-      "tag": "minecraft:wool"
-    }
+    "P": "minecraft:mossy_cobblestone",
+    "W": "#minecraft:wool"
   },
   "pattern": [
     "P",

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "dio_pressure_plates:silent_jungle_pressure_plate"
-    }
+    "dio_pressure_plates:silent_jungle_pressure_plate"
   ],
   "result": {
     "count": 1,

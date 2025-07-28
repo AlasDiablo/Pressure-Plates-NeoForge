@@ -3,11 +3,13 @@ package fr.alasdiablo.mods.pressure.plates.block;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -16,15 +18,16 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class ObsidianPressurePlateBlock extends MuteablePressurePlateBlock {
-    public ObsidianPressurePlateBlock(boolean muted) {
+    public ObsidianPressurePlateBlock(boolean muted, ResourceKey<Block> id) {
         super(Properties.of()
-                      .mapColor(MapColor.COLOR_BLACK)
-                      .forceSolidOn()
-                      .instrument(NoteBlockInstrument.BASEDRUM)
-                      .requiresCorrectToolForDrops()
-                      .noCollission()
-                      .strength(5.0f, 1200.0f)
-                      .pushReaction(PushReaction.DESTROY), muted);
+                .setId(id)
+                .mapColor(MapColor.COLOR_BLACK)
+                .forceSolidOn()
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .noCollission()
+                .strength(5.0f, 1200.0f)
+                .pushReaction(PushReaction.DESTROY), muted);
     }
 
     @Override
@@ -32,7 +35,7 @@ public class ObsidianPressurePlateBlock extends MuteablePressurePlateBlock {
         return getEntityCount(level, TOUCH_AABB.move(pos), Player.class) > 0 ? 15 : 0;
     }
 
-    @Override
+    // @Override
     public void appendHoverText(
             @NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag tooltipFlag
     ) {

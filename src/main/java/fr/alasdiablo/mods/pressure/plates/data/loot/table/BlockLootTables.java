@@ -1,13 +1,13 @@
 package fr.alasdiablo.mods.pressure.plates.data.loot.table;
 
-import fr.alasdiablo.mods.lib.api.data.loot.DioBlockLootSubProvider;
+import fr.alasdiablo.mods.lib.data.CustomBlockLootSubProvider;
 import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.world.flag.FeatureFlags;
 
 import java.util.Set;
 
-public class BlockLootTables extends DioBlockLootSubProvider {
+public class BlockLootTables extends CustomBlockLootSubProvider {
     public BlockLootTables(HolderLookup.Provider lookup) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), lookup);
     }

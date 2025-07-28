@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "P": {
-      "item": "minecraft:dirt"
-    },
-    "W": {
-      "tag": "minecraft:wool"
-    }
+    "P": "minecraft:dirt",
+    "W": "#minecraft:wool"
   },
   "pattern": [
     "P",

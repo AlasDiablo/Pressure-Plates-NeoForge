@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "P": {
-      "item": "minecraft:obsidian"
-    },
-    "W": {
-      "tag": "minecraft:wool"
-    }
+    "P": "minecraft:obsidian",
+    "W": "#minecraft:wool"
   },
   "pattern": [
     "P",

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "dio_pressure_plates:block/silent_jungle_pressure_plate"
+  }
+}

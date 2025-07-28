@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "dio_pressure_plates:block/dirt_pressure_plate"
+  }
+}
