@@ -3,11 +3,13 @@ package fr.alasdiablo.mods.pressure.plates.registry;
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.PressurePlatesRegistries;
 import fr.alasdiablo.mods.pressure.plates.block.*;
+import fr.alasdiablo.mods.pressure.plates.item.HoverTextBlockItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -25,37 +27,47 @@ import java.util.function.Function;
 public class PressurePlatesBlocks {
     static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PressurePlates.MOD_ID);
     static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PressurePlates.MOD_ID);
+
+
     public static final DeferredBlock<ObsidianPressurePlateBlock> OBSIDIAN_PRESSURE_PLATE = register(
             (registryName) -> new ObsidianPressurePlateBlock(false, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.OBSIDIAN_PRESSURE_PLATE
+            PressurePlatesRegistries.OBSIDIAN_PRESSURE_PLATE,
+            ObsidianPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<ObsidianPressurePlateBlock> SILENT_OBSIDIAN_PRESSURE_PLATE = register(
             (registryName) -> new ObsidianPressurePlateBlock(true, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.SILENT_OBSIDIAN_PRESSURE_PLATE
+            PressurePlatesRegistries.SILENT_OBSIDIAN_PRESSURE_PLATE,
+            ObsidianPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<MossyCobblestonePressurePlateBlock> MOSSY_COBBLESTONE_PRESSURE_PLATE = register(
             (registryName) -> new MossyCobblestonePressurePlateBlock(false, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.MOSSY_COBBLESTONE_PRESSURE_PLATE
+            PressurePlatesRegistries.MOSSY_COBBLESTONE_PRESSURE_PLATE,
+            MossyCobblestonePressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<MossyCobblestonePressurePlateBlock> SILENT_MOSSY_COBBLESTONE_PRESSURE_PLATE = register(
             (registryName) -> new MossyCobblestonePressurePlateBlock(true, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.SILENT_MOSSY_COBBLESTONE_PRESSURE_PLATE
+            PressurePlatesRegistries.SILENT_MOSSY_COBBLESTONE_PRESSURE_PLATE,
+            MossyCobblestonePressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<NetherrackPressurePlateBlock> NETHERRACK_PRESSURE_PLATE = register(
             (registryName) -> new NetherrackPressurePlateBlock(false, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.NETHERRACK_PRESSURE_PLATE
+            PressurePlatesRegistries.NETHERRACK_PRESSURE_PLATE,
+            NetherrackPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<NetherrackPressurePlateBlock> SILENT_NETHERRACK_PRESSURE_PLATE = register(
             (registryName) -> new NetherrackPressurePlateBlock(true, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.SILENT_NETHERRACK_PRESSURE_PLATE
+            PressurePlatesRegistries.SILENT_NETHERRACK_PRESSURE_PLATE,
+            NetherrackPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<DirtPressurePlateBlock> DIRT_PRESSURE_PLATE = register(
             (registryName) -> new DirtPressurePlateBlock(false, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.DIRT_PRESSURE_PLATE
+            PressurePlatesRegistries.DIRT_PRESSURE_PLATE,
+            DirtPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<DirtPressurePlateBlock> SILENT_DIRT_PRESSURE_PLATE = register(
             (registryName) -> new DirtPressurePlateBlock(true, ResourceKey.create(Registries.BLOCK, registryName)),
-            PressurePlatesRegistries.SILENT_DIRT_PRESSURE_PLATE
+            PressurePlatesRegistries.SILENT_DIRT_PRESSURE_PLATE,
+            DirtPressurePlateBlock.HOVER_TEXT_KEY
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_OAK_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)
@@ -124,9 +136,26 @@ public class PressurePlatesBlocks {
             PressurePlatesRegistries.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE
     );
 
+
     private static <T extends Block> @NotNull DeferredBlock<T> register(Function<ResourceLocation, ? extends T> block, String name) {
         DeferredBlock<T> blockRegistry = BLOCKS.register(name, block);
         ITEMS.registerSimpleBlockItem(blockRegistry);
+        return blockRegistry;
+    }
+
+    private static <T extends Block> @NotNull DeferredBlock<T> register(Function<ResourceLocation, ? extends T> block, String name, String hoverTextKey) {
+        DeferredBlock<T> blockRegistry = BLOCKS.register(name, block);
+
+        Item.Properties properties = new Item.Properties();
+        String blockNamePath = blockRegistry.unwrapKey().orElseThrow().location().getPath();
+
+        ITEMS.register(blockNamePath, key -> new HoverTextBlockItem(
+                        blockRegistry.value(),
+                        properties.setId(ResourceKey.create(Registries.ITEM, key)).useBlockDescriptionPrefix(),
+                        hoverTextKey
+                )
+        );
+
         return blockRegistry;
     }
 

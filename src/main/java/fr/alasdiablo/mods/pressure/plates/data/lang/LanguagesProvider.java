@@ -1,6 +1,10 @@
 package fr.alasdiablo.mods.pressure.plates.data.lang;
 
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
+import fr.alasdiablo.mods.pressure.plates.block.DirtPressurePlateBlock;
+import fr.alasdiablo.mods.pressure.plates.block.MossyCobblestonePressurePlateBlock;
+import fr.alasdiablo.mods.pressure.plates.block.NetherrackPressurePlateBlock;
+import fr.alasdiablo.mods.pressure.plates.block.ObsidianPressurePlateBlock;
 import fr.alasdiablo.mods.pressure.plates.registry.PressurePlatesBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -33,10 +37,10 @@ public class LanguagesProvider {
                 this.add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.get(), "Dirt Pressure Plate");
                 this.add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.get(), "Silent Dirt Pressure Plate");
 
-                this.add("block.dio_pressure_plates.obsidian_pressure_plate.hover_text", "Only detect players");
-                this.add("block.dio_pressure_plates.mossy_cobblestone_pressure_plate.hover_text", "Only detect living entities");
-                this.add("block.dio_pressure_plates.netherrack_pressure_plate.hover_text", "Only detect enemy entities");
-                this.add("block.dio_pressure_plates.dirt_pressure_plate.hover_text", "Only detect passive entities");
+                this.add(ObsidianPressurePlateBlock.HOVER_TEXT_KEY, "Only detect players");
+                this.add(MossyCobblestonePressurePlateBlock.HOVER_TEXT_KEY, "Only detect living entities");
+                this.add(NetherrackPressurePlateBlock.HOVER_TEXT_KEY, "Only detect enemy entities");
+                this.add(DirtPressurePlateBlock.HOVER_TEXT_KEY, "Only detect passive entities");
 
                 this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Silent Oak Pressure Plate");
                 this.add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get(), "Silent Spruce Pressure Plate");
@@ -106,10 +110,11 @@ public class LanguagesProvider {
                 this.add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.get(), "Plaque de pression en terre");
                 this.add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.get(), "Plaque de pression en terre silencieuse");
 
-                this.add("block.dio_pressure_plates.obsidian_pressure_plate.hover_text", "Détecter uniquement les joueurs");
-                this.add("block.dio_pressure_plates.mossy_cobblestone_pressure_plate.hover_text", "Détecter uniquement les entités vivantes");
-                this.add("block.dio_pressure_plates.netherrack_pressure_plate.hover_text", "Détecter uniquement les entités ennemies");
-                this.add("block.dio_pressure_plates.dirt_pressure_plate.hover_text", "Détecter uniquement les entités passives");
+
+                this.add(ObsidianPressurePlateBlock.HOVER_TEXT_KEY, "Détecter uniquement les joueurs");
+                this.add(MossyCobblestonePressurePlateBlock.HOVER_TEXT_KEY, "Détecter uniquement les entités vivantes");
+                this.add(NetherrackPressurePlateBlock.HOVER_TEXT_KEY, "Détecter uniquement les entités ennemies");
+                this.add(DirtPressurePlateBlock.HOVER_TEXT_KEY, "Détecter uniquement les entités passives");
 
                 this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Plaque de pression en chêne silencieuse");
                 this.add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get(), "Plaque de pression en sapin silencieuse");

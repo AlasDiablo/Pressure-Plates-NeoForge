@@ -1,3 +1,7 @@
+### 2.0.1
+
+- Add missing hover text on Dirt, Mossy Cobblestone, Netherrack and Obsidian pressure plate
+
 ### 2.0.0
 
 - Update to Minecraft 1.21.8
