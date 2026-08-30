@@ -1,31 +1,25 @@
-## About Dio's Pressure Plates
 
-Dio's Pressure Plates is a utility mod that adds a variety of pressure plates to Minecraft for various uses.
-Dio's Pressure Plates take inspiration from
-the [ObsidiPlates](https://legacy.curseforge.com/minecraft/mc-mods/obsidiplates)
-by [Myrathi](https://legacy.curseforge.com/members/myrathi/projects)
+Installation information
+=======
 
-## Getting Started
+This template repository can be directly cloned to get you started with a new
+mod. Simply create a new repository cloned from this one, by following the
+instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-You can find a total of 21 new pressure plates.
+Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
 
-### Obsidian Pressure Plate
+If at any point you are missing libraries in your IDE, or you've run into problems you can
+run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
+{this does not affect your code} and then start the process again.
 
-Obsidian Pressure Plate is only activated when a player steps on it.
+Mapping Names:
+============
+By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
+in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
+license. For the latest license text, refer to the mapping file itself, or the reference copy here:
+https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
 
-### Mossy Cobblestone Pressure Plate
-
-Mossy Cobblestone Pressure Plate is only activated when a living entity (other than the player) steps on it.
-
-### Netherrack Pressure Plate
-
-Netherrack Pressure Plate is only activated when an enemy entity steps on it.
-
-### Dirt Pressure Plate
-
-Dirt Pressure Plate is only activated when a passive entity steps on it.
-
-### Silent Pressure Plate
-
-Silent Pressure Plate is a variant of any pressure plate (Light Weighted and Heavy Weighted Pressure Plate) that makes
-no sound when stepped on.
+Additional Resources: 
+==========
+Community Documentation: https://docs.neoforged.net/  
+NeoForged Discord: https://discord.neoforged.net/

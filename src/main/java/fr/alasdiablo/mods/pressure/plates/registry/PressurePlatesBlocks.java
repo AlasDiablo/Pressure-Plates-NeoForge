@@ -6,7 +6,7 @@ import fr.alasdiablo.mods.pressure.plates.block.*;
 import fr.alasdiablo.mods.pressure.plates.item.HoverTextBlockItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -19,9 +19,11 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Collection;
 import java.util.function.Function;
 
 public class PressurePlatesBlocks {
@@ -137,17 +139,17 @@ public class PressurePlatesBlocks {
     );
 
 
-    private static <T extends Block> @NotNull DeferredBlock<T> register(Function<ResourceLocation, ? extends T> block, String name) {
+    private static <T extends Block> @NotNull DeferredBlock<T> register(Function<Identifier, ? extends T> block, String name) {
         DeferredBlock<T> blockRegistry = BLOCKS.register(name, block);
         ITEMS.registerSimpleBlockItem(blockRegistry);
         return blockRegistry;
     }
 
-    private static <T extends Block> @NotNull DeferredBlock<T> register(Function<ResourceLocation, ? extends T> block, String name, String hoverTextKey) {
+    private static <T extends Block> @NotNull DeferredBlock<T> register(Function<Identifier, ? extends T> block, String name, String hoverTextKey) {
         DeferredBlock<T> blockRegistry = BLOCKS.register(name, block);
 
         Item.Properties properties = new Item.Properties();
-        String blockNamePath = blockRegistry.unwrapKey().orElseThrow().location().getPath();
+        String blockNamePath = blockRegistry.unwrapKey().orElseThrow().identifier().getPath();
 
         ITEMS.register(blockNamePath, key -> new HoverTextBlockItem(
                         blockRegistry.value(),
@@ -207,6 +209,10 @@ public class PressurePlatesBlocks {
                 new ItemStack(itemLike),
                 CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
         );
+    }
+
+    public static Collection<DeferredHolder<Block,? extends Block>> getRegisteredBlocks() {
+        return BLOCKS.getEntries();
     }
 
     public static void init(IEventBus bus) {

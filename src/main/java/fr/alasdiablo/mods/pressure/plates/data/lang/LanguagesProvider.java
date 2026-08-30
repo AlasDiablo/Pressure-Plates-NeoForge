@@ -39,7 +39,7 @@ public class LanguagesProvider {
 
                 this.add(ObsidianPressurePlateBlock.HOVER_TEXT_KEY, "Only detect players");
                 this.add(MossyCobblestonePressurePlateBlock.HOVER_TEXT_KEY, "Only detect living entities");
-                this.add(NetherrackPressurePlateBlock.HOVER_TEXT_KEY, "Only detect enemy entities");
+                this.add(NetherrackPressurePlateBlock.HOVER_TEXT_KEY, "Only detect monster entities");
                 this.add(DirtPressurePlateBlock.HOVER_TEXT_KEY, "Only detect passive entities");
 
                 this.add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get(), "Silent Oak Pressure Plate");

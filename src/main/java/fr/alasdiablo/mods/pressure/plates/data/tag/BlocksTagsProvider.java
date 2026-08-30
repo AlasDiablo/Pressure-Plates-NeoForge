@@ -19,29 +19,29 @@ public class BlocksTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(PressurePlatesBlocks.OBSIDIAN_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_OBSIDIAN_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_MOSSY_COBBLESTONE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.NETHERRACK_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_NETHERRACK_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_STONE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE.get());
+                .add(PressurePlatesBlocks.OBSIDIAN_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_OBSIDIAN_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_MOSSY_COBBLESTONE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.NETHERRACK_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_NETHERRACK_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_STONE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE.getKey());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.get());
+                .add(PressurePlatesBlocks.DIRT_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_DIRT_PRESSURE_PLATE.getKey());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_BIRCH_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_JUNGLE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_ACACIA_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_DARK_OAK_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_MANGROVE_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_CHERRY_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_CRIMSON_PRESSURE_PLATE.get())
-                .add(PressurePlatesBlocks.SILENT_WARPED_PRESSURE_PLATE.get());
+                .add(PressurePlatesBlocks.SILENT_OAK_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_SPRUCE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_BIRCH_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_JUNGLE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_ACACIA_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_DARK_OAK_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_MANGROVE_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_CHERRY_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_CRIMSON_PRESSURE_PLATE.getKey())
+                .add(PressurePlatesBlocks.SILENT_WARPED_PRESSURE_PLATE.getKey());
     }
 }

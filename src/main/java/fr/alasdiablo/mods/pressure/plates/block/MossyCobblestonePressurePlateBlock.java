@@ -2,9 +2,9 @@ package fr.alasdiablo.mods.pressure.plates.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.Avatar;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -22,7 +22,7 @@ public class MossyCobblestonePressurePlateBlock extends MuteablePressurePlateBlo
                       .forceSolidOn()
                       .instrument(NoteBlockInstrument.BASEDRUM)
                       .requiresCorrectToolForDrops()
-                      .noCollission()
+                      .noCollision()
                       .strength(2.0F, 6.0F)
                       .pushReaction(PushReaction.DESTROY), muted);
     }
@@ -34,7 +34,7 @@ public class MossyCobblestonePressurePlateBlock extends MuteablePressurePlateBlo
                 TOUCH_AABB.move(pos),
                 EntitySelector.NO_SPECTATORS
                         .and(entity -> !entity.isIgnoringBlockTriggers())
-                        .and(entity -> !(entity instanceof Player))
+                        .and(entity -> !(entity instanceof Avatar))
         ).isEmpty() ? 0 : 15;
     }
 }

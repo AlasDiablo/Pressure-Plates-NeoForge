@@ -10,11 +10,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dio_pressure_plates:silent_acacia_pressure_plate"
+          "name": "dio_pressure_plates:silent_bamboo_pressure_plate"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dio_pressure_plates:blocks/silent_acacia_pressure_plate"
+  "random_sequence": "dio_pressure_plates:blocks/silent_bamboo_pressure_plate"
 }

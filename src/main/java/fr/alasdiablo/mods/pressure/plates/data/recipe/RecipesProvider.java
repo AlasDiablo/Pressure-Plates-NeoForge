@@ -7,7 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -64,7 +64,7 @@ public class RecipesProvider extends RecipeProvider {
                 .unlockedBy(getHasName(pressurePlate), has(pressurePlate))
                 .save(
                         this.output,
-                        ResourceLocation.fromNamespaceAndPath(
+                        Identifier.fromNamespaceAndPath(
                                 PressurePlates.MOD_ID,
                                 getItemName(material)
                         ).toString()

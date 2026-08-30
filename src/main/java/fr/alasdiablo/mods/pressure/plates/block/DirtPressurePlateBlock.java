@@ -2,9 +2,8 @@ package fr.alasdiablo.mods.pressure.plates.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntitySelector;
-import net.minecraft.world.entity.Leashable;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -22,7 +21,7 @@ public class DirtPressurePlateBlock extends MuteablePressurePlateBlock {
                 .strength(0.5F)
                 .sound(SoundType.GRAVEL)
                 .pushReaction(PushReaction.DESTROY)
-                .noCollission()
+                .noCollision()
                 .forceSolidOn(), muted);
         this.soundType = SoundType.GRAVEL;
     }
@@ -30,11 +29,10 @@ public class DirtPressurePlateBlock extends MuteablePressurePlateBlock {
     @Override
     protected int getSignalStrength(@NotNull Level level, @NotNull BlockPos pos) {
         return level.getEntitiesOfClass(
-                LivingEntity.class,
+                AgeableMob.class,
                 TOUCH_AABB.move(pos),
                 EntitySelector.NO_SPECTATORS
                         .and(entity -> !entity.isIgnoringBlockTriggers())
-                        .and(entity -> entity instanceof Leashable)
         ).isEmpty() ? 0 : 15;
     }
 }

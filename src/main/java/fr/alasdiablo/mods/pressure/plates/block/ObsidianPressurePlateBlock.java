@@ -20,7 +20,7 @@ public class ObsidianPressurePlateBlock extends MuteablePressurePlateBlock {
                 .forceSolidOn()
                 .instrument(NoteBlockInstrument.BASEDRUM)
                 .requiresCorrectToolForDrops()
-                .noCollission()
+                .noCollision()
                 .strength(5.0f, 1200.0f)
                 .pushReaction(PushReaction.DESTROY), muted);
     }
