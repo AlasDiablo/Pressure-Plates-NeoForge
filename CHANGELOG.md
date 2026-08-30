@@ -1,6 +1,7 @@
 ### 3.0.0
 
 - Update to Minecraft 26.2
+- Add missing loot tables
 
 ### 2.0.1
 
