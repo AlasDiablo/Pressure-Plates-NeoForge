@@ -46,7 +46,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = mod_id.replace("_", "-")
 }
 
 // Mojang ships Java 25 to end users in 26.2, so mods should target Java 25.
@@ -126,7 +126,7 @@ configurations {
 }
 
 dependencies {
-    implementation("curse.maven:dio_lib-422014:8767871")
+    implementation("curse.maven:dio_lib-422014:8813574")
 
     // compile against the JEI API but do not include it at runtime
     // compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")

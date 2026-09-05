@@ -1,5 +1,6 @@
 package fr.alasdiablo.mods.pressure.plates.registry;
 
+import fr.alasdiablo.mods.lib.block.MuteablePressurePlateBlock;
 import fr.alasdiablo.mods.pressure.plates.PressurePlates;
 import fr.alasdiablo.mods.pressure.plates.PressurePlatesRegistries;
 import fr.alasdiablo.mods.pressure.plates.block.*;
@@ -73,68 +74,68 @@ public class PressurePlatesBlocks {
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_OAK_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_OAK_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_SPRUCE_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_SPRUCE_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_BIRCH_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.BIRCH, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_BIRCH_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_JUNGLE_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.JUNGLE, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_JUNGLE_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_ACACIA_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_ACACIA_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_DARK_OAK_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.DARK_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_DARK_OAK_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_MANGROVE_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.MANGROVE, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_MANGROVE_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_CHERRY_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.CHERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_CHERRY_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_BAMBOO_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.BAMBOO, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_BAMBOO_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_CRIMSON_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_CRIMSON_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_WARPED_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.WARPED, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_WARPED_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_STONE_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_STONE_PRESSURE_PLATE
     );
     public static final DeferredBlock<MuteablePressurePlateBlock> SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE = register(
             (registryName) -> new MuteablePressurePlateBlock(
                     BlockSetType.POLISHED_BLACKSTONE, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE)
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))),
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName)), true),
             PressurePlatesRegistries.SILENT_POLISHED_BLACKSTONE_PRESSURE_PLATE
     );
 

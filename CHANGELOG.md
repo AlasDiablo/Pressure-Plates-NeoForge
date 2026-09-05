@@ -1,3 +1,7 @@
+### 4.0.0
+
+- Update to Dio's Lib 12.0.0
+
 ### 3.0.0
 
 - Update to Minecraft 26.2
